@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import '../styles/post.css';
 import cardSampleImg from '../cardSample.png';
 import { withRouter } from "react-router-dom";
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 import { storeAllPosts, updateSinglePost } from '../store/actions/postActions';
 
 class HomePagePosts extends Component {

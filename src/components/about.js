@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../styles/home.css'
+import '../styles/home.css';
+import { connect } from "react-redux";
 class About extends Component {
 
     constructor(props) {
@@ -18,4 +19,12 @@ class About extends Component {
     }
 }
 
-export default About;
+const mapStateToProps = (state) => {
+    return {};
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(About);

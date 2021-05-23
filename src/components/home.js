@@ -3,15 +3,14 @@ import HomeCoursel from './homeCoursel';
 import '../styles/home.css';
 import { WEB_SITE_TITLE } from '../constants';
 import HomePagePosts from './homePagePosts';
-
+import { connect } from "react-redux";
 class Home extends Component {
 
     constructor(props) {
         console.log('constructor is called');
         super(props);
-        
     }
-    
+
     render() {
         return (
             <div>
@@ -25,4 +24,13 @@ class Home extends Component {
     }
 }
 
-export default Home;
+
+const mapStateToProps = (state) => {
+    return {};
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
