@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import React, { Component } from 'react';
 import ourTptLogo from '../ourTpt.png';
 import './header.css'
+import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 class Header extends Component {
     constructor(props) {
@@ -38,4 +39,14 @@ class Header extends Component {
     }
 }
 
-export default withRouter(Header);
+const mapStateToProps = state => {
+    return {
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+    }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
