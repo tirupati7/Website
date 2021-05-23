@@ -12,9 +12,9 @@ export const Routes = () => {
         <div className="whole">
             <Header />
             <Switch>
-                <Route exact path="/home" component={Home} />
+                <Route exact path="/" component={Home} />
                 <Route exact path="/">
-                    <Redirect to="/home" />
+                    <Redirect to="/" />
                 </Route>
                 <Route exact path="/about" component={About} />
                 <Route exact path="/touristPlaces" component={TouristPlaces} />

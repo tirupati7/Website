@@ -16,7 +16,7 @@ class Header extends Component {
         const { location } = this.props;
         return (
             <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" className="custom-header-styles justify-content-center">
-                <Navbar.Brand href="/home"><img
+                <Navbar.Brand href="/"><img
                     src={ourTptLogo}
                     width="30"
                     height="30"
