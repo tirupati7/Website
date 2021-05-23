@@ -1,0 +1,21 @@
+.post-content{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.detailed-post-title{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.detailed-post-desc{
+    font-size: 18px;
+}
+
+.detailed-post-img{
+    text-align: center;
+}
+
+.detailed-post-desc:first-letter {
+    padding-left: 20%;
+}
