@@ -17,7 +17,8 @@ class HomeCoursel extends Component {
                         className="d-block w-100"
                         src="https://i.pinimg.com/originals/80/db/4d/80db4d08705f9055b5a60ef7fe055a99.jpg"
                         alt="First slide"
-                        className="coursel-img"
+                        width="100%"
+                        height="300px"
                     />
                     <Carousel.Caption>
                         <h3>First slide label</h3>
@@ -29,7 +30,8 @@ class HomeCoursel extends Component {
                         className="d-block w-100"
                         src="https://www.teahub.io/photos/full/132-1326035_lord-venkateswara-swamy-hd.jpg"
                         alt="Second slide"
-                        className="coursel-img"
+                        width="100%"
+                        height="300px"
                     />
                     <Carousel.Caption>
                         <h3>Second slide label</h3>
@@ -41,7 +43,8 @@ class HomeCoursel extends Component {
                         className="d-block w-100"
                         src="https://static.thousandwonders.net/Tirumala.Venkateswara.Temple.original.3309.jpg"
                         alt="Third slide"
-                        className="coursel-img"
+                        width="100%"
+                        height="300px"
                     />
                     <Carousel.Caption>
                         <h3>Third slide label</h3>
