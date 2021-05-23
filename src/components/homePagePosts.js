@@ -55,7 +55,7 @@ class HomePagePosts extends Component {
     render() {
         return (
             <div className="posts-block">
-                <div>{POSTS}</div>
+                <div className="posts-heading">{POSTS}</div>
                 {this.state.posts.map((post, i) => {
                     return (
                         <div className="post-content" key={i}>
