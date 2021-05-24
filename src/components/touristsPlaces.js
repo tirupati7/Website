@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/home.css";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 
 class TouristPlaces extends Component {
   constructor(props) {
@@ -25,4 +26,4 @@ const mapDispatchToProps = (dispatch) => {
     return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(TouristPlaces);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TouristPlaces));
