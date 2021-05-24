@@ -12,7 +12,7 @@ const { store, persistor } = configureStore();
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate persistor={persistor}>
-      <Router>
+      <Router basename="/">
         <Routes />
       </Router>
     </PersistGate>
