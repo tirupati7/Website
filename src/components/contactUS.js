@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../styles/home.css";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+
 class ContactUS extends Component {
     constructor(props) {
         super(props);
@@ -24,4 +26,4 @@ const mapDispatchToProps = (dispatch) => {
     return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContactUS);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ContactUS));

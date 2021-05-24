@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/homeCoursel.css";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 
 class HomeCoursel extends Component {
   constructor(props) {
@@ -65,4 +66,4 @@ const mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeCoursel);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(HomeCoursel));

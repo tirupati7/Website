@@ -4,6 +4,8 @@ import '../styles/home.css';
 import { WEB_SITE_TITLE } from '../constants';
 import HomePagePosts from './homePagePosts';
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+
 class Home extends Component {
 
     constructor(props) {
@@ -33,4 +35,4 @@ const mapDispatchToProps = (dispatch) => {
     return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));

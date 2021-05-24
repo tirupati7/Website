@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/home.css";
 import "../styles/post.css";
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 class DetailedPostView extends Component {
     constructor(props) {
@@ -49,4 +50,4 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {};
 };
-export default connect(mapStateToProps, mapDispatchToProps)(DetailedPostView);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(DetailedPostView));
