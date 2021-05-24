@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import { Routes } from './routes/routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import configureStore from './store/store';
 import { PersistGate } from "redux-persist/lib/integration/react";
-
+import { createBrowserHistory } from 'history';
 const { store, persistor } = configureStore();
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate persistor={persistor}>
-      <Router basename="/">
+      <Router history={createBrowserHistory()}>
         <Routes />
       </Router>
     </PersistGate>
