@@ -4,12 +4,15 @@
     flex-wrap: wrap;
 }
 .detailed-post-title{
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 45px;
+    font-style: normal;
+    font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .detailed-post-desc{
-    font-size: 18px;
+    font-size: 21px;
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+    margin-bottom: 5px;
 }
 
 .detailed-post-img{

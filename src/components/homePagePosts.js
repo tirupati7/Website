@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { POSTS } from '../constants';
 import firebase from '../firebase/config';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -19,7 +18,6 @@ class HomePagePosts extends Component {
     }
 
     componentDidMount() {
-        console.log('componentDidMount is called');
         const postRef = firebase.database().ref('posts');
         postRef.on('value', (snapshot) => {
             let posts = snapshot.val();
@@ -50,11 +48,11 @@ class HomePagePosts extends Component {
     render() {
         return (
             <div className="posts-block">
-                <div className="posts-heading">{POSTS}</div>
+                {/* <div className="posts-heading">{POSTS}</div> */}
                 {this.state.posts.map((post, i) => {
                     return (
                         <div className="post-content" key={i}>
-                            <Card style={{ width: '18rem', margin: '5px' }}>
+                            <Card style={{ width: '19.6rem', margin: '5px' }}>
                                 <Card.Img variant="top" src={post.image ? post.image : cardSampleImg} width="100%" height="200px" />
                                 <Card.Body height="200px">
                                     <Card.Title>{post.title && post.title.length > 45 ? post.title.substring(0, 45) + '...' : post.title}</Card.Title>
