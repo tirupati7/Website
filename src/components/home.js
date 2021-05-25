@@ -8,17 +8,12 @@ import { withRouter } from "react-router-dom";
 
 class Home extends Component {
 
-    constructor(props) {
-        console.log('constructor is called');
-        super(props);
-    }
-
     render() {
         return (
             <div>
                 <HomeCoursel></HomeCoursel>
                 <div className="home-wrapper">
-                    <h3>{WEB_SITE_TITLE}</h3>
+                    <div className="web-site-title">{WEB_SITE_TITLE}</div>
                     <HomePagePosts></HomePagePosts>
                 </div>
             </div>
