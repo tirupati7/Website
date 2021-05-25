@@ -42,14 +42,9 @@ class HomePagePosts extends Component {
     }
 
     goToDetailedPost(post) {
-        console.log('Route History ::: ' + JSON.stringify(this.props.history));
-        console.log('Post details ::: ' + JSON.stringify(post));
-        /* const history = useHistory();
-        history.push(path); */
         this.props.updateSinglePost(post);
         let path = `/detailed-post-view`;
         this.props.history.push(path);
-        
     }
 
     render() {

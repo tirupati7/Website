@@ -18,7 +18,6 @@ class DetailedPostView extends Component {
     render() {
         const { detailedPost } = this.props;
         let desc = detailedPost.desc.split("_N");
-        console.log("DESC::::: " + JSON.stringify(desc));
         return (
             <div className="navbar-wrapper home-wrapper detailed-post-wrapper">
                 <div>

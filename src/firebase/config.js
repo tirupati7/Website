@@ -1,14 +1,14 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 var firebaseConfig = {
-    apiKey: "AIzaSyC6ZIHMdAq3PDkhwAniZM9nINTUEZjzXqI",
-    authDomain: "ourtpt-local-dev.firebaseapp.com",
-    databaseURL: "https://ourtpt-local-dev-default-rtdb.firebaseio.com",
-    projectId: "ourtpt-local-dev",
-    storageBucket: "ourtpt-local-dev.appspot.com",
-    messagingSenderId: "842076483697",
-    appId: "1:842076483697:web:42966e0ca6f6216e2debd0",
-    measurementId: "G-4V4286BVDP"
+  apiKey: "AIzaSyDyAt52gLyagmvDbAaitHRtTAf1xLILtlw",
+  authDomain: "ourtirupati-3c599.firebaseapp.com",
+  databaseURL: "https://ourtirupati-3c599-default-rtdb.firebaseio.com",
+  projectId: "ourtirupati-3c599",
+  storageBucket: "ourtirupati-3c599.appspot.com",
+  messagingSenderId: "193357116594",
+  appId: "1:193357116594:web:7b14ef14148a2e3ac0c5ab",
+  measurementId: "G-3V96CW1G07",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
