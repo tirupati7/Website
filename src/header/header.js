@@ -15,23 +15,23 @@ class Header extends Component {
     render() {
         const { location } = this.props;
         return (
-            <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" className="custom-header-styles justify-content-center">
+            <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" className="custom-header-styles">
                 <Navbar.Brand href="/"><img
                     src={ourTptLogo}
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
                     alt="Our Tirupati logo"
-                /> Home</Navbar.Brand>
+                /> OurTirupati</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav activeKey={location.pathname} className="mr-auto">
-                        <Nav.Link href="/touristPlaces">Tourist places</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        {/* <Nav.Link href="/touristPlaces">Tourist places</Nav.Link>
+                        <Nav.Link href="#pricing">Pricing</Nav.Link> */}
                     </Nav>
                     <Nav activeKey={location.pathname}>
                         <Nav.Link href="/contact-us">Contact US</Nav.Link>
-                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link href="/about">About US</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -4,12 +4,13 @@ import "../styles/homeCoursel.css";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import firebase from "../firebase/config";
-
+import Skeleton from 'react-loading-skeleton';
 class HomeCoursel extends Component {
   constructor(props) {
     super(props);
     this.state = {
       courselImgs: [],
+      isLoading: true
     };
   }
 
@@ -27,6 +28,7 @@ class HomeCoursel extends Component {
       const urls = await fetchImages();
       this.setState({
         courselImgs: urls,
+        isLoading: false
       });
     };
 
@@ -34,12 +36,18 @@ class HomeCoursel extends Component {
   }
 
   render() {
+    const { isLoading } = this.state;
+    if(isLoading){
+      return (
+        <Skeleton width={2000} height={450} />
+      );
+    }
     return (
       <Carousel style={{ marginTop: "54px" }}>
         {this.state.courselImgs.length > 0 &&
           this.state.courselImgs.map((eachCoursel, i) => {
             return (
-              <Carousel.Item interval={1000}>
+              <Carousel.Item interval={1000} key={i}>
                 <img
                   className="d-block w-100"
                   src={eachCoursel}

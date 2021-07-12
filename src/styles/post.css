@@ -19,9 +19,9 @@
     text-align: center;
 }
 
-.detailed-post-desc:first-letter {
+/* .detailed-post-desc:first-letter {
     padding-left: 20%;
-}
+} */
 
 .posts-heading{
     font-size: 25px;
