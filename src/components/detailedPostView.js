@@ -7,6 +7,7 @@ import { withRouter } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 import firebase from "../firebase/config";
 import Skeleton from "react-loading-skeleton";
+import { Helmet } from "react-helmet";
 class DetailedPostView extends Component {
   constructor(props) {
     super(props);
@@ -55,6 +56,13 @@ class DetailedPostView extends Component {
       <div className="navbar-wrapper home-wrapper detailed-post-wrapper">
         {detailedPost && (
           <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{detailedPost.title}</title>
+                <link rel="canonical" href={"http://ourtirupati.com/" + this.props.match.params.id} />
+                <meta name="description" content={detailedPost.metaDesc} />
+            </Helmet>
+
             <div className="detailed-post-title">{detailedPost.title}</div>
             <div className="detailed-post-img">
               <Image
